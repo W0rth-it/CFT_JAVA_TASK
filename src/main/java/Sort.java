@@ -12,6 +12,7 @@ public class Sort {
             try {
                 inputFiles.add(new BufferedReader(new FileReader(inputFileName)));
             } catch (IOException e) {
+                System.out.println("Error: incorrect input file with name:" + inputFileName);
                 e.printStackTrace();
             }
         }
