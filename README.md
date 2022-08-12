@@ -1,6 +1,6 @@
 # CFT_JAVA_TASK
 Запуск:
-```JINT\out\artifacts\JINT_jar java -jar .\JINT.jar -i out.txt in1.txt in2.txt```
+```\out\artifacts\JINT_jar java -jar .\JINT.jar -i out.txt in1.txt in2.txt```
 
 Версии:
 maven 3.8.1, 
