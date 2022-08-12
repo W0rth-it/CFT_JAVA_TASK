@@ -25,5 +25,9 @@ public class Settings {
         this.outputFile = args[argNum];
         argNum++;
         this.inputFiles.addAll(Arrays.asList(args).subList(argNum, args.length));
+        if (this.inputFiles.size() == 1){
+            System.out.println("Error: minimum 2 files required");
+            System.exit(0);
+        }
     }
 }

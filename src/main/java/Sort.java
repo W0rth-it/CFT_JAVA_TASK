@@ -14,6 +14,7 @@ public class Sort {
             } catch (IOException e) {
                 System.out.println("Error: incorrect input file with name:" + inputFileName);
                 e.printStackTrace();
+                System.exit(0);
             }
         }
 
@@ -94,13 +95,13 @@ public class Sort {
         else {
             if (Objects.equals(dataType, "-i"))
                 try {
-                    result = Integer.parseInt(line1) <= Integer.parseInt(line2);
+                    result = Integer.parseInt(line1) < Integer.parseInt(line2);
                 } catch (NumberFormatException e){
                     System.out.println("Error: wrong file format");
                     System.exit(0);
                 }
             if (Objects.equals(dataType, "-s"))
-                result = line1.compareTo(line2) <= 0;
+                result = line1.compareTo(line2) < 0;
             if (!Objects.equals(order, "-a")) return !result;
         }
         return result;
